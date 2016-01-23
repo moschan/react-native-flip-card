@@ -1,0 +1,14 @@
+{
+  "name": "FlipCardExample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "react-native": "^0.18.1"
+  },
+  "devDependencies": {
+    "react-native-flip-card": "^1.0.0"
+  }
+}
