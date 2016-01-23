@@ -1,0 +1,32 @@
+{
+  "name": "react-native-flip-card",
+  "version": "1.0.0",
+  "description": "The card component which have motion of flip for React Native",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moschan/react-native-flip-card.git"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "card",
+    "flip"
+  ],
+  "author": "moschan <kota.frsw＠gmail.com> (http://moschan.com/blog)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moschan/react-native-flip-card/issues"
+  },
+  "homepage": "https://github.com/moschan/react-native-flip-card#readme"
+}
