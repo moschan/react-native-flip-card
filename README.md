@@ -29,7 +29,7 @@ in JavaScirpt
 import FlipCard, {
   Face,
   Back
-} from './index.js'
+} from 'react-native-flip-card'
 ```
 
 
@@ -39,7 +39,7 @@ Usage
 Simple
 ---
 ```
-<FlipCard >
+<FlipCard>
   <Face>
     <Text>The Face</Text>
   </Face>
