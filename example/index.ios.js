@@ -26,6 +26,9 @@ class FlipCardExample extends Component {
         <View>
           <FlipCard 
             style={styles.card}
+            friction={6}
+            flipHorizontal={false}
+            flipVertical={true}
             flipped={false}
             clickable={true}
             onFlipped={(isFlipped)=>{console.log('isFlipped', isFlipped)}}
@@ -35,7 +38,7 @@ class FlipCardExample extends Component {
                 <Text>The Face</Text>
               </View>
             </Face>
-            <Back>
+            <Back flipHorizontal={false} flipVertical={true}>
               <View style={styles.back}>
                 <Text>The Back</Text>
               </View>

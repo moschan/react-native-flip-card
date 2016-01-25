@@ -11,19 +11,40 @@ import React, {
   View
 } from 'react-native';
 
+import FlipCard, {
+  Face,
+  Back
+} from 'react-native-flip-card'
+
 class FlipCardExample extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Flip Card Example
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
-        </Text>
+        <View>
+          <FlipCard 
+            style={styles.card}
+            friction={6}
+            flipHorizontal={false}
+            flipVertical={true}
+            flipped={false}
+            clickable={true}
+            onFlipped={(isFlipped)=>{console.log('isFlipped', isFlipped)}}
+          >
+            <Face>
+              <View style={styles.face}>
+                <Text>The Face</Text>
+              </View>
+            </Face>
+            <Back flipHorizontal={false} flipVertical={true}>
+              <View style={styles.back}>
+                <Text>The Back</Text>
+              </View>
+            </Back>
+          </FlipCard>
+        </View>
       </View>
     );
   }
@@ -46,6 +67,22 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  card: {
+    width:200,
+    height:50,
+  },
+  face: {
+    flex:1,
+    backgroundColor: '#2ecc71',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  back: {
+    flex:1,
+    backgroundColor: '#f1c40f',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
 });
 
 AppRegistry.registerComponent('FlipCardExample', () => FlipCardExample);
