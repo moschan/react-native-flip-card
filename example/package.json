@@ -9,6 +9,6 @@
     "react-native": "^0.18.1"
   },
   "devDependencies": {
-    "react-native-flip-card": "^1.0.0"
+    "react-native-flip-card": "^2.0.0"
   }
 }

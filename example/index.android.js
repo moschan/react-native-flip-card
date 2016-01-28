@@ -11,10 +11,8 @@ import React, {
   View
 } from 'react-native';
 
-import FlipCard, {
-  Face,
-  Back
-} from 'react-native-flip-card'
+// import FlipCard from './index.js'
+import FlipCard from 'react-native-flip-card'
 
 class FlipCardExample extends Component {
   render() {
@@ -24,25 +22,34 @@ class FlipCardExample extends Component {
           Flip Card Example
         </Text>
         <View>
+          <FlipCard style={{marginBottom: 5}}>
+            {/* Face Side */}
+            <View style={styles.face}>
+              <Text>The Face</Text>
+            </View>
+            {/* Back Side */}
+            <View style={styles.back}>
+              <Text>The Back</Text>
+            </View>
+          </FlipCard>
+
           <FlipCard 
             style={styles.card}
             friction={6}
-            flipHorizontal={false}
-            flipVertical={true}
+            flipHorizontal={true}
+            flipVertical={false}
             flipped={false}
             clickable={true}
             onFlipped={(isFlipped)=>{console.log('isFlipped', isFlipped)}}
           >
-            <Face>
-              <View style={styles.face}>
-                <Text>The Face</Text>
-              </View>
-            </Face>
-            <Back flipHorizontal={false} flipVertical={true}>
-              <View style={styles.back}>
-                <Text>The Back</Text>
-              </View>
-            </Back>
+            {/* Face Side */}
+            <View style={styles.face}>
+              <Text>The Face</Text>
+            </View>
+            {/* Back Side */}
+            <View style={styles.back}>
+              <Text>The Back</Text>
+            </View>
           </FlipCard>
         </View>
       </View>
