@@ -1,17 +1,17 @@
 react-native-flip-card
 ===
 
-> The card component which have motion of flip for React Native
+> The card component which have motion of flip for React Native(iOS/Android)
 
 [![NPM](https://nodei.co/npm/react-native-flip-card.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-native-flip-card/)
 
 [![npm](https://img.shields.io/npm/v/react-native-flip-card.svg)]()[![npm](https://img.shields.io/npm/l/react-native-flip-card.svg)]()
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard) [![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
 
 Demo
 ---
-![](./doc/ver2_vertical.gif)
+![](./doc/ver3_android_demo.gif)
 
 
 Installation
@@ -56,7 +56,7 @@ Customized
   friction={6}
   flipHorizontal={true}
   flipVertical={false}
-  flipped={false}
+  flip={false}
   clickable={true}
   onFlipped={(isFlipped)=>{console.log('isFlipped', isFlipped)}}
 >
@@ -74,9 +74,9 @@ Customized
 Props
 ===
 
-flipped(bool) `Default: false`
+flip(bool) `Default: false`
 ---
-If you change default display side, you can set `true` to this param.
+If you change default display side, you can set `true` to this param. If you change side, you can pass `bool` variable dynamically.
 
 clicakble(bool) `Default: true`
 ---
@@ -110,7 +110,6 @@ When a card finish a flip animation, call `onFlipped` function with param.
 Credits
 ===
 Inspired by [react-flipcard](https://github.com/mzabriskie/react-flipcard)
-
 
 
 License
