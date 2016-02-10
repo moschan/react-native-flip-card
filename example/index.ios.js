@@ -8,6 +8,7 @@ import React, {
   Component,
   StyleSheet,
   Text,
+  TouchableOpacity,
   View
 } from 'react-native';
 
@@ -15,6 +16,12 @@ import React, {
 import FlipCard from 'react-native-flip-card'
 
 class FlipCardExample extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      flip: false
+    }
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -22,6 +29,7 @@ class FlipCardExample extends Component {
           Flip Card Example
         </Text>
         <View>
+          <Text style={styles.welcome}>Minimal</Text>
           <FlipCard style={{marginBottom: 5}}>
             {/* Face Side */}
             <View style={styles.face}>
@@ -33,13 +41,14 @@ class FlipCardExample extends Component {
             </View>
           </FlipCard>
 
-          <FlipCard 
-            style={styles.card}
+          <Text style={styles.welcome}>Customized</Text>
+          <FlipCard
+            flip={this.state.flip}
             friction={6}
             flipHorizontal={true}
             flipVertical={false}
-            flipped={false}
             clickable={true}
+            style={styles.card}
             onFlipped={(isFlipped)=>{console.log('isFlipped', isFlipped)}}
           >
             {/* Face Side */}
@@ -51,6 +60,15 @@ class FlipCardExample extends Component {
               <Text>The Back</Text>
             </View>
           </FlipCard>
+        </View>
+
+        <View>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={()=>{this.setState({flip: !this.state.flip})}}
+            >
+            <Text style={styles.buttonText}>Flip</Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
@@ -89,6 +107,21 @@ const styles = StyleSheet.create({
     backgroundColor: '#f1c40f',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  button: {
+    width: 100,
+    height: 30,
+    marginTop: 30,
+    paddingTop: 6,
+    paddingBottom: 6,
+    borderRadius: 3,
+    borderWidth: 1,
+    backgroundColor: '#007AFF',
+    borderColor: 'transparent',
+  },
+  buttonText: {
+    color: '#fff',
+    textAlign: 'center',
   }
 });
 
