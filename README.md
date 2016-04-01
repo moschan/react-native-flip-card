@@ -100,11 +100,18 @@ If you set false, a card not flip to vertical. If you set true both `flipHorizon
 ![](./doc/ver2_diagonal.gif)
 
 
-
-
 onFlipped(function) `(is_flipped) => {}`
 ---
 When a card finish a flip animation, call `onFlipped` function with param.
+
+alignHeight(boolean) `Default:false`
+---
+If you pass `true` to `alignHeight` param, the card keep height of bigger side.
+
+alignWidth(boolean) `Default:false`
+---
+If you pass `true` to `alignWidth` param, the card keep width of bigger side.
+
 
 
 Credits
