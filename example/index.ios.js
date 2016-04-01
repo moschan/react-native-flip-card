@@ -52,6 +52,8 @@ class FlipCardExample extends Component {
               flipVertical={false}
               clickable={true}
               style={styles.card}
+              alignHeight={true}
+              // alignWidth={true}
               onFlipped={(isFlipped)=>{console.log('isFlipped', isFlipped)}}
             >
               {/* Face Side */}
@@ -60,7 +62,14 @@ class FlipCardExample extends Component {
               </View>
               {/* Back Side */}
               <View style={styles.back}>
-                <Text>The Back</Text>
+                <Text>T</Text>
+                <Text>h</Text>
+                <Text>e</Text>
+                <Text></Text>
+                <Text>B</Text>
+                <Text>a</Text>
+                <Text>c</Text>
+                <Text>k</Text>
               </View>
             </FlipCard>
           </View>
@@ -75,8 +84,7 @@ class FlipCardExample extends Component {
           </View>
 
           <View>
-            <Text style={styles.welcome}>with collection of data</Text>
-            {CARDS.map(createCard)}
+          {CARDS.map(createCard)}
           </View>
         </View>
       </ScrollView>
