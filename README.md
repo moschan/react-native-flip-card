@@ -54,6 +54,7 @@ Customized
 <FlipCard 
   style={styles.card}
   friction={6}
+  perspective={1000}
   flipHorizontal={true}
   flipVertical={false}
   flip={false}
@@ -85,6 +86,10 @@ If you want to disable click a card, you can set `false` to this param.
 friction(number) `Default: 6`
 ---
 The friction of card animation
+
+perspective(number) `Default: 0`
+---
+The amount of perspective applied to the flip transformation
 
 flipHorizontal(bool) `Default: false`
 ---
