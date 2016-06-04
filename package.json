@@ -1,6 +1,6 @@
 {
   "name": "react-native-flip-card",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "The card component which have motion of flip for React Native",
   "main": "index.js",
   "scripts": {
