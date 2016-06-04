@@ -14,8 +14,8 @@ import React, {
   View
 } from 'react-native';
 
- import FlipCard from './index.js'
-//import FlipCard from 'react-native-flip-card'
+// import FlipCard from './index.js'
+import FlipCard from 'react-native-flip-card'
 
 class FlipCardExample extends Component {
   constructor (props) {
