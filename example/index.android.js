@@ -45,6 +45,7 @@ class FlipCardExample extends Component {
           <FlipCard
             flip={this.state.flip}
             friction={6}
+            perspective={1000}
             flipHorizontal={true}
             flipVertical={false}
             clickable={true}
