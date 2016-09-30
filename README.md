@@ -101,8 +101,11 @@ If you set true, a card flip to horizontal.
 flipVertical(bool) `Default: true`
 ---
 If you set false, a card not flip to vertical. If you set true both `flipHorizontal` and `flipVertical` , a card flip to diagonal.
-![](./doc/ver2_vertical.gif)
-![](./doc/ver2_diagonal.gif)
+
+
+vertical | diagnoal
+---- | ----
+ ![](./doc/ver2_vertical.gif)| ![](./doc/ver2_diagonal.gif)
 
 
 onFlipped(function) `(is_flipped) => {}`
