@@ -23,12 +23,6 @@ in Cli
 npm i react-native-flip-card
 ```
 
-in JavaScirpt
----
-```
-import FlipCard from 'react-native-flip-card'
-```
-
 
 Usage
 ===
@@ -36,6 +30,8 @@ Usage
 Simple
 ---
 ```
+import FlipCard from 'react-native-flip-card'
+
 <FlipCard>
   {/* Face Side */}
   <View style={styles.face}>
