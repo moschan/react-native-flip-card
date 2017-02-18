@@ -3,12 +3,23 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "react-native start"
+    "start": "react-native start",
+    "ios": "react-native run-ios",
+    "sync": "rm -rf ./node_modules/react-native-flip-card; sane '/usr/bin/rsync -v -a --exclude .git --exclude example --exclude node_modules ../ ./node_modules/react-native-flip-card/' .. --glob='{**/*.json,**/*.js}'",
+    "test": "jest"
   },
   "dependencies": {
-    "react-native": "^0.18.1"
+    "react": "15.4.2",
+    "react-native": "^0.41.2",
+    "react-native-flip-card": "file:../"
   },
   "devDependencies": {
-    "react-native-flip-card": "^3.3.0"
+    "babel-jest": "18.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "jest": "18.1.0",
+    "react-test-renderer": "15.4.2"
+  },
+  "jest": {
+    "preset": "react-native"
   }
 }
