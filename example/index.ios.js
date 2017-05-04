@@ -1,23 +1,22 @@
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
+ * @flow
  */
-'use strict';
-import React, {
+
+import React, { Component } from 'react';
+import {
   AppRegistry,
-  Component,
   StyleSheet,
   Text,
+  View,
   TouchableOpacity,
-  ScrollView,
-  Image,
-  View
+  ScrollView
 } from 'react-native';
 
-// import FlipCard from './index.js'
-import FlipCard from 'react-native-flip-card'
+import FlipCard from 'react-native-flip-card';
 
-class FlipCardExample extends Component {
+export default class FlipCardExample extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -26,11 +25,9 @@ class FlipCardExample extends Component {
   }
   render() {
     return (
-      <ScrollView>
-        <View style={styles.container}>
-          <Text style={styles.welcome}>
-            Flip Card Example
-          </Text>
+      <View style={styles.container}>
+        <ScrollView>
+          <Text style={styles.welcome}>Flip Card Example</Text>
           <View>
             <Text style={styles.welcome}>Minimal</Text>
             <FlipCard style={{marginBottom: 5}}>
@@ -85,10 +82,11 @@ class FlipCardExample extends Component {
           </View>
 
           <View>
-          {CARDS.map(createCard)}
+            {CARDS.map(createCard)}
           </View>
-        </View>
-      </ScrollView>
+
+        </ScrollView>
+      </View>
     )
   }
 }
@@ -132,6 +130,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+    marginTop: 20,
   },
   instructions: {
     textAlign: 'center',
