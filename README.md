@@ -75,7 +75,7 @@ flip(bool) `Default: false`
 ---
 If you change default display side, you can set `true` to this param. If you change side, you can pass `bool` variable dynamically.
 
-clicakble(bool) `Default: true`
+clickable(bool) `Default: true`
 ---
 If you want to disable click a card, you can set `false` to this param.
 
