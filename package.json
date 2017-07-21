@@ -25,6 +25,9 @@
     "card",
     "flip"
   ],
+  "dependencies": {
+    "prop-types": "15.5.10"
+  },
   "author": "moschan <kota.frsw＠gmail.com> (http://moschan.com/blog)",
   "license": "MIT",
   "bugs": {
