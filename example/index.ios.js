@@ -52,7 +52,7 @@ export default class FlipCardExample extends Component {
               style={styles.card}
               alignHeight={true}
               // alignWidth={true}
-              onFlipped={(isFlipped)=>{console.log('isFlipped', isFlipped)}}
+              onFlipEnd={(isFlipEnd)=>{console.log('isFlipEnd', isFlipEnd)}}
             >
               {/* Face Side */}
               <View style={styles.face}>
