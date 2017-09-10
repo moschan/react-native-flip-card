@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moschan/react-native-flip-card.git"
+    "url": "git+https://github.com/asknicely/react-native-flip-card.git"
   },
   "keywords": [
     "react-component",
@@ -31,7 +31,7 @@
     "url": "https://github.com/moschan/react-native-flip-card/issues"
   },
   "homepage": "https://github.com/moschan/react-native-flip-card#readme",
-  "dependencies": {
+  "devDependencies": {
     "prop-types": "^15.5.10"
   }
 }
