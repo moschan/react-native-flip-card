@@ -103,10 +103,13 @@ vertical | diagnoal
 ---- | ----
  ![](./doc/ver2_vertical.gif)| ![](./doc/ver2_diagonal.gif)
 
+onFlipStart(function) `(isFlipStart) => {}`
+---
+When a card starts a flip animation, call `onFlipEnd` function with param.
 
 onFlipEnd(function) `(isFlipEnd) => {}`
 ---
-When a card finish a flip animation, call `onFlipEnd` function with param.
+When a card finishes a flip animation, call `onFlipEnd` function with param.
 
 alignHeight(boolean) `Default:false`
 ---
@@ -116,7 +119,9 @@ alignWidth(boolean) `Default:false`
 ---
 If you pass `true` to `alignWidth` param, the card keep width of bigger side.
 
-
+useNativeDriver(boolean) `Default:false`
+---
+If you pass `true` to `useNativeDriver` param, the card animation will utilize the native driver.
 
 Credits
 ===
