@@ -47,7 +47,7 @@ import FlipCard from 'react-native-flip-card'
 Customized
 ---
 ```
-<FlipCard 
+<FlipCard
   style={styles.card}
   friction={6}
   perspective={1000}
@@ -122,6 +122,14 @@ If you pass `true` to `alignWidth` param, the card keep width of bigger side.
 useNativeDriver(boolean) `Default:false`
 ---
 If you pass `true` to `useNativeDriver` param, the card animation will utilize the native driver.
+
+customAnimation(function) `Default:Animated.spring`
+---
+Customize the animation applied on the rotation angle. This function takes two arguments:
+ - `value`: the value to animate
+ - `toValue`: the final value at the end of the animation
+
+**Example:** for a 200ms linear animation, `customAnimation={(value, toValue) => Animated.timing(value, { toValue, duration: 200, useNativeDriver: true })}`
 
 Credits
 ===
