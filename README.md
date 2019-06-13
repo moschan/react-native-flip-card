@@ -111,6 +111,10 @@ onFlipEnd(function) `(isFlipEnd) => {}`
 ---
 When a card finishes a flip animation, call `onFlipEnd` function with param.
 
+onLongPress(function) `(isFlipped) => {}`
+---
+When a card is long pressed, call `onLongPress` function with param if card is flipped.
+
 alignHeight(boolean) `Default:false`
 ---
 If you pass `true` to `alignHeight` param, the card keep height of bigger side.
