@@ -19,7 +19,7 @@ Installation
 
 in Cli
 ---
-```
+```javascript
 npm i react-native-flip-card
 ```
 
@@ -29,7 +29,7 @@ Usage
 
 Simple
 ---
-```
+```javascript
 import FlipCard from 'react-native-flip-card'
 
 <FlipCard>
@@ -46,8 +46,8 @@ import FlipCard from 'react-native-flip-card'
 
 Customized
 ---
-```
-<FlipCard 
+```javascript
+<FlipCard
   style={styles.card}
   friction={6}
   perspective={1000}
@@ -55,12 +55,13 @@ Customized
   flipVertical={false}
   flip={false}
   clickable={true}
-  onFlipEnd={(isFlipEnd)=>{console.log('isFlipEnd', isFlipEnd)}}
->
+  onFlipEnd={(isFlipEnd) => { console.log('isFlipEnd', isFlipEnd); }}>
+  
   {/* Face Side */}
   <View style={styles.face}>
     <Text>The Face</Text>
   </View>
+  
   {/* Back Side */}
   <View style={styles.back}>
     <Text>The Back</Text>
